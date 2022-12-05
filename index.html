@@ -18,40 +18,23 @@
     <div class="container">
 
         <div class="row p-5">
-            <form action="" class="border text-center py-4">
-                <input id="myNote" class="myNote text-center py-2 rounded" type="text">
-                <button id="add-button" class="btn btn-primary shadow">Enregistrer</button>
-            </form>
+            <div class="border border-primary">
+                <form action="" class="border text-center">
+                    <select class="py-2 text-center" name="myColor" id="myColor">
+                        <option value="primary">Bleu</option>
+                        <option value="danger">Rouge</option>
+                        <option value="warning">Jaune</option>
+                    </select>
+                    <input id="myNote" name="myNote" class="text-center py-2 rounded" type="text"
+                        placeholder=" Je dois ...">
+                    <button id="add-button" class="btn btn-primary shadow mb-1">Enregistrer</button>
+                </form>
+            </div>
         </div>
 
         <div id="allNotes" class="row flex-column m-3 py-3 border text-center">
             <div class="d-table-cell align-middle mb-1 border">
-                <input data-old-value="Pain" type="text" class="col-lg-4 fw-bold btn btn-primary shadow p-2"
-                    value="Pain" disabled>
-
-                <i data-action="edit" class="bi bi-pencil-fill btn btn-outline-secondary"></i>
-                <i data-action="remove" class="bi bi-trash-fill btn btn-outline-danger"></i>
-
-                <i data-action="valid" class="bi bi-check-lg btn btn-outline-success" style="display:none"></i>
-                <i data-action="cancel" class="bi bi bi-x-lg btn btn-outline-secondary" style="display:none"></i>
-            </div>
-            <div>
-                <input type="text" class="col-lg-4 fw-bold btn btn-primary shadow mb-1 p-2" value="Lait" disabled>
-
-                <i data-action="edit" class="bi bi-pencil-fill btn btn-outline-secondary"></i>
-                <i data-action="remove" class="bi bi-trash-fill btn btn-outline-danger"></i>
-
-                <i data-action="valid" class="bi bi-check-lg btn btn-outline-success" style="display:none"></i>
-                <i data-action="cancel" class="bi bi bi-x-lg btn btn-outline-secondary" style="display:none"></i>
-            </div>
-            <div>
-                <input type="text" class="col-lg-4 fw-bold btn btn-primary shadow mb-1 p-2" value="Chocolat" disabled>
-
-                <i data-action="edit" class="bi bi-pencil-fill btn btn-outline-secondary"></i>
-                <i data-action="remove" class="bi bi-trash-fill btn btn-outline-danger"></i>
-
-                <i data-action="valid" class="bi bi-check-lg btn btn-outline-success" style="display:none"></i>
-                <i data-action="cancel" class="bi bi bi-x-lg btn btn-outline-secondary" style="display:none"></i>
+                <!-- Ici les éléments de la shopping liste -->
             </div>
         </div>
 
