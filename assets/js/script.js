@@ -56,9 +56,12 @@ document.querySelector('#add-button').addEventListener('click', (e) => {
         const newDiv = document.createElement('div')
         newDiv.classList.add('d-table-cell', 'align-middle', 'mb-1', 'border')
 
+        // je récupère la couleur du checkBox
+        const myColor = (document.querySelector('input[name="myColor"]:checked')).value
+
         // utilisation de innerHTML pour ne pas alourdir la syntaxe en raison des multiples attributs : classe, data, type, etc ... 
         newDiv.innerHTML = `
-            <input data-old-value="${document.querySelector('input[name="myNote"]').value}" data-color="${document.querySelector('select[name="myColor"]').value}" type="text" class="col-lg-4 fw-bold btn btn-${document.querySelector('select[name="myColor"]').value} shadow p-2"
+            <input data-old-value="${document.querySelector('input[name="myNote"]').value}" data-color="${myColor}" type="text" class="col-lg-4 fw-bold btn btn-${myColor} shadow p-2"
             value="${document.querySelector('input[name="myNote"]').value}" disabled>
             <i data-action="edit" class="bi bi-pencil-fill btn btn-outline-secondary"></i>
             <i data-action="remove" class="bi bi-trash-fill btn btn-outline-danger"></i>

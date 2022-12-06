@@ -20,11 +20,21 @@
         <div class="row p-5">
             <div class="border border-primary">
                 <form action="" class="border text-center">
-                    <select class="py-2 text-center" name="myColor" id="myColor">
-                        <option value="primary">Bleu</option>
-                        <option value="danger">Rouge</option>
-                        <option value="warning">Jaune</option>
-                    </select>
+
+                    <div class="d-inline">
+                        <input type="radio" class="btn-check" name="myColor" id="warning" autocomplete="off" checked
+                            value="warning">
+                        <label class="btn btn-outline-warning mb-1" for="warning"><i class="bi bi-bag-fill"></i></label>
+
+                        <input type="radio" class="btn-check" name="myColor" id="primary" autocomplete="off"
+                            value="primary">
+                        <label class="btn btn-outline-primary mb-1" for="primary"><i class="bi bi-check-square-fill"></i></label>
+
+                        <input type="radio" class="btn-check" name="myColor" id="danger" autocomplete="off"
+                            value="danger">
+                        <label class="btn btn-outline-danger mb-1" for="danger"><i class="bi bi-exclamation-circle-fill"></i></label>
+                    </div>
+
                     <input id="myNote" name="myNote" class="text-center py-2 rounded" type="text"
                         placeholder=" Je dois ...">
                     <button id="add-button" class="btn btn-primary shadow mb-1">Enregistrer</button>
